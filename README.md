@@ -105,7 +105,7 @@ Através dessa aplicação, será possível realizar as operações básicas de 
 
 1. Clone o repositório
 
-- `git clone git@github.com:tryber/sd-0x-project-trybewallet.git`
+- `git clone git@github.com:tryber/sd-018-a-project-trybewallet.git`
 - Entre na pasta do repositório que você acabou de clonar:
   - `cd sd-0x-project-trybewallet`
 
