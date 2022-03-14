@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 class Header extends React.Component {
   getTotal(expenses) {
     let total = 0;
+    if (expenses.length === 0) {
+      return total;
+    }
     expenses.forEach((exp) => {
       const value = parseFloat(exp.value);
       const curr = exp.currency;

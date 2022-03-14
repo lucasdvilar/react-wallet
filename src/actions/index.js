@@ -1,6 +1,7 @@
 export const SAVE_EMAIL = 'SAVE_EMAIL';
 export const LOG_EXPENSE = 'LOG_EXPENSE';
 export const GET_CURRENCIES = 'GET_CURRENCIES';
+export const DELETE_EXPENSE = 'DELETE_EXPENSE';
 
 export const saveEmail = (email) => ({
   type: SAVE_EMAIL,
@@ -24,3 +25,8 @@ export const fetchCurrency = () => (
     return dispatch(getCurrencies(currencies));
   }
 );
+
+export const deleteExpense = (expenseId) => ({
+  type: DELETE_EXPENSE,
+  expenseId,
+});
