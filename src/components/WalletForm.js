@@ -66,7 +66,14 @@ class WalletForm extends React.Component {
           >
             {Object.keys(curr)
               .filter((el) => el !== 'USDT')
-              .map((cur) => <option key={ cur }>{cur}</option>)}
+              .map((cur) => (
+                <option
+                  key={ cur }
+                  data-testid={ cur }
+                >
+                  {cur}
+                </option>
+              ))}
           </select>
         </label>
         <label htmlFor="method">
